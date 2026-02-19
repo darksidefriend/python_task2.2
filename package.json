@@ -6,11 +6,6 @@
   "directories": {
     "doc": "docs"
   },
-  "htmlvalidate": {
-    "rules": {
-      "valid-id": ["error", { "relaxed": true }]
-    }
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "postcss src/css/style.css -o theme/css/style.css",
