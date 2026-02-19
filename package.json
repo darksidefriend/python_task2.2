@@ -1,0 +1,38 @@
+{
+  "name": "python_task2.2",
+  "version": "1.0.0",
+  "description": "Python course Task 2.2",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "postcss src/css/style.css -o theme/css/style.css",
+    "build:js": "uglifyjs src/js/script.js -o theme/js/script.js -c -m",
+    "build:mkdocs": "mkdocs build",
+    "minify:html": "html-minifier --input-dir site --output-dir site --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-style-link-type-attributes --use-short-doctype --minify-css true --minify-js true",
+    "validate:html": "html-validate site/**/*.html",
+    "build": "npm run build:css && npm run build:js && npm run build:mkdocs && npm run minify:html && npm run validate:html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darksidefriend/python_task2.2.git"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "cssnano": "^6.0.1",
+    "html-minifier": "^4.0.0",
+    "html-validate": "^8.0.5",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "uglify-js": "^3.17.4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darksidefriend/python_task2.2/issues"
+  },
+  "homepage": "https://github.com/darksidefriend/python_task2.2#readme"
+}

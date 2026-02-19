@@ -1,1 +1,15 @@
-site_name: My Docs
+site_name: Лабораторная работа Савельева Даниила
+site_description: Пример сайта на MkDocs с кастомной темой и CI/CD
+site_author: Савельев Даниил
+
+theme:
+  name: null
+  custom_dir: theme/
+
+nav:
+  - Главная: index.md
+
+extra:
+  author:
+    name: Савельев Даниил
+    group: Р4210

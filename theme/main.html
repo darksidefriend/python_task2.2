@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ config.site_description }}">
+    <meta name="author" content="{{ config.site_author }}">
+    <title>{{ config.site_name }} | {{ page.title }}</title>
+    <link rel="stylesheet" href="{{ base_url }}/css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1>{{ config.site_name }}</h1>
+            <nav>
+                <a href="{{ base_url }}/">Главная</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        {{ page.content }}
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; {{ build_date_utc.strftime('%Y') }} Савельев Даниил, группа Р4210</p>
+        </div>
+    </footer>
+
+    <script src="{{ base_url }}/js/script.js"></script>
+</body>
+</html>
