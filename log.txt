@@ -1,0 +1,682 @@
+PS D:\python_task2.2> virtualenv venv       
+created virtual environment CPython3.14.3.final.0-64 in 1220ms
+  creator CPython3Windows(dest=D:\python_task2.2\venv, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, via=copy, app_data_dir=C:\Users\Junior\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==25.3
+  activators BashActivator,BatchActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+PS D:\python_task2.2> venv\Scripts\activate
+(venv) PS D:\python_task2.2> pip install mkdocs
+Collecting mkdocs
+  Using cached mkdocs-1.6.1-py3-none-any.whl.metadata (6.0 kB)
+Collecting click>=7.0 (from mkdocs)
+  Using cached click-8.3.1-py3-none-any.whl.metadata (2.6 kB)
+Collecting colorama>=0.4 (from mkdocs)
+  Using cached colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Collecting ghp-import>=1.0 (from mkdocs)
+  Using cached ghp_import-2.1.0-py3-none-any.whl.metadata (7.2 kB)
+Collecting jinja2>=2.11.1 (from mkdocs)
+  Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting markdown>=3.3.6 (from mkdocs)
+  Using cached markdown-3.10.2-py3-none-any.whl.metadata (5.1 kB)
+Collecting markupsafe>=2.0.1 (from mkdocs)
+  Using cached markupsafe-3.0.3-cp314-cp314-win_amd64.whl.metadata (2.8 kB)
+Collecting mergedeep>=1.3.4 (from mkdocs)
+  Using cached mergedeep-1.3.4-py3-none-any.whl.metadata (4.3 kB)
+Collecting mkdocs-get-deps>=0.2.0 (from mkdocs)
+  Using cached mkdocs_get_deps-0.2.0-py3-none-any.whl.metadata (4.0 kB)
+Collecting packaging>=20.5 (from mkdocs)
+  Using cached packaging-26.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting pathspec>=0.11.1 (from mkdocs)
+  Using cached pathspec-1.0.4-py3-none-any.whl.metadata (13 kB)
+Collecting pyyaml-env-tag>=0.1 (from mkdocs)
+  Using cached pyyaml_env_tag-1.1-py3-none-any.whl.metadata (5.5 kB)
+Collecting pyyaml>=5.1 (from mkdocs)
+  Using cached pyyaml-6.0.3-cp314-cp314-win_amd64.whl.metadata (2.4 kB)
+Collecting watchdog>=2.0 (from mkdocs)
+  Using cached watchdog-6.0.0-py3-none-win_amd64.whl.metadata (44 kB)
+Collecting python-dateutil>=2.8.1 (from ghp-import>=1.0->mkdocs)
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting platformdirs>=2.2.0 (from mkdocs-get-deps>=0.2.0->mkdocs)
+  Using cached platformdirs-4.9.2-py3-none-any.whl.metadata (4.7 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.1->ghp-import>=1.0->mkdocs)
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Using cached mkdocs-1.6.1-py3-none-any.whl (3.9 MB)
+Using cached click-8.3.1-py3-none-any.whl (108 kB)
+Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Using cached ghp_import-2.1.0-py3-none-any.whl (11 kB)
+Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+Using cached markdown-3.10.2-py3-none-any.whl (108 kB)
+Using cached markupsafe-3.0.3-cp314-cp314-win_amd64.whl (15 kB)
+Using cached mergedeep-1.3.4-py3-none-any.whl (6.4 kB)
+Using cached mkdocs_get_deps-0.2.0-py3-none-any.whl (9.5 kB)
+Using cached packaging-26.0-py3-none-any.whl (74 kB)
+Using cached pathspec-1.0.4-py3-none-any.whl (55 kB)
+Using cached platformdirs-4.9.2-py3-none-any.whl (21 kB)
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Using cached pyyaml-6.0.3-cp314-cp314-win_amd64.whl (156 kB)
+Using cached pyyaml_env_tag-1.1-py3-none-any.whl (4.7 kB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Using cached watchdog-6.0.0-py3-none-win_amd64.whl (79 kB)
+Installing collected packages: watchdog, six, pyyaml, platformdirs, pathspec, packaging, mergedeep, markupsafe, markdown, colorama, pyyaml-env-tag, python-dateutil, mkdocs-get-deps, jinja2, click, ghp-import, mkdocs
+Successfully installed click-8.3.1 colorama-0.4.6 ghp-import-2.1.0 jinja2-3.1.6 markdown-3.10.2 markupsafe-3.0.3 mergedeep-1.3.4 mkdocs-1.6.1 mkdocs-get-deps-0.2.0 packaging-26.0 pathspec-1.0.4 platformdirs-4.9.2 python-dateutil-2.9.0.post0 pyyaml-6.0.3 pyyaml-env-tag-1.1 six-1.17.0 watchdog-6.0.0
+
+[notice] A new release of pip is available: 25.3 -> 26.0.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+(venv) PS D:\python_task2.2> mkdocs new .         
+INFO    -  Writing config file: .\mkdocs.yml
+INFO    -  Writing initial docs: .\docs\index.md
+(venv) PS D:\python_task2.2> mkdocs serve         
+INFO    -  Building documentation...
+INFO    -  Cleaning site directory
+INFO    -  Documentation built in 0.14 seconds
+INFO    -  [10:57:49] Serving on http://127.0.0.1:8000/
+INFO    -  Shutting down...
+(venv) PS D:\python_task2.2> npm init -y
+Wrote to D:\python_task2.2\package.json:
+
+{
+  "name": "python_task2.2",
+  "version": "1.0.0",
+  "description": "Python course Task 2.2",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darksidefriend/python_task2.2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darksidefriend/python_task2.2/issues"
+  },
+  "homepage": "https://github.com/darksidefriend/python_task2.2#readme"
+}
+
+
+(venv) PS D:\python_task2.2> npm install
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@html-validate/stylish@4.3.0',
+npm WARN EBADENGINE   required: { node: '>= 18' },
+npm WARN EBADENGINE   current: { node: 'v16.13.0', npm: '8.1.0' }
+npm WARN EBADENGINE }
+npm WARN deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+
+added 204 packages, and audited 205 packages in 35s
+
+47 packages are looking for funding
+  run `npm fund` for details
+
+4 high severity vulnerabilities
+
+To address all issues possible (including breaking changes), run:
+  npm audit fix --force
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.
+(venv) PS D:\python_task2.2> npm run build
+
+> python_task2.2@1.0.0 build
+> npm run build:css && npm run build:js && npm run build:mkdocs && npm run minify:html && npm run validate:html
+
+
+> python_task2.2@1.0.0 build:css
+> postcss src/css/style.css -o theme/css/style.css
+
+
+> python_task2.2@1.0.0 build:js
+> uglifyjs src/js/script.js -o theme/js/script.js -c -m
+
+node:internal/fs/utils:344
+    throw err;
+    ^
+
+Error: ENOENT: no such file or directory, open 'theme/js/script.js'
+    at Object.openSync (node:fs:585:3)
+    at Object.writeFileSync (node:fs:2153:35)
+    at run (D:\python_task2.2\node_modules\uglify-js\bin\uglifyjs:481:12)
+    at Object.<anonymous> (D:\python_task2.2\node_modules\uglify-js\bin\uglifyjs:295:5)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:17:47 {
+  errno: -4058,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: 'theme/js/script.js'
+}
+(venv) PS D:\python_task2.2> npm run build
+
+> python_task2.2@1.0.0 build
+> npm run build:css && npm run build:js && npm run build:mkdocs && npm run minify:html && npm run validate:html
+
+
+> python_task2.2@1.0.0 build:css
+> postcss src/css/style.css -o theme/css/style.css
+
+
+> python_task2.2@1.0.0 build:js
+> uglifyjs src/js/script.js -o theme/js/script.js -c -m
+
+
+> python_task2.2@1.0.0 build:mkdocs
+> mkdocs build
+
+INFO    -  Cleaning site directory
+INFO    -  Building documentation to directory: D:\python_task2.2\site
+INFO    -  Documentation built in 0.11 seconds
+
+> python_task2.2@1.0.0 minify:html
+> html-minifier --input-dir site --output-dir site --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-style-link-type-attributes --use-short-doctype --minify-css true --minify-js true
+
+Minification error on site\search\worker.js
+Parse Error: < lang.length; i++) {
+      if (lang[i] != 'en') {
+        scriptsToLoad.push(['lunr', lang[i], 'js'].join('.'));
+      }
+    }
+  }
+  loadScripts(scriptsToLoad, onScriptsLoaded);
+}
+
+function onScriptsLoaded () {
+  console.log('All search scripts loaded, building Lunr index...');
+  if (data.config && data.config.separator && data.config.separator.length) {
+    lunr.tokenizer.separator = new RegExp(data.config.separator);
+  }
+
+  if (data.index) {
+    index = lunr.Index.load(data.index);
+    data.docs.forEach(function (doc) {
+      documents[doc.location] = doc;
+    });
+    console.log('Lunr pre-built index loaded, search ready');
+  } else {
+    index = lunr(function () {
+      if (lang.length === 1 && lang[0] !== "en" && lunr[lang[0]]) {
+        this.use(lunr[lang[0]]);
+      } else if (lang.length > 1) {
+        this.use(lunr.multiLanguage.apply(null, lang));  // spread operator not supported in all browsers: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator#Browser_compatibility
+      }
+      this.field('title');
+      this.field('text');
+      this.ref('location');
+
+      for (var i=0; i < data.docs.length; i++) {
+        var doc = data.docs[i];
+        this.add(doc);
+        documents[doc.location] = doc;
+      }
+    });
+    console.log('Lunr index built, search ready');
+  }
+  allowSearch = true;
+  postMessage({config: data.config});
+  postMessage({allowSearch: allowSearch});
+}
+
+function init () {
+  var oReq = new XMLHttpRequest();
+  oReq.addEventListener("load", onJSONLoaded);
+  var index_path = base_path + '/search_index.json';
+  if( 'function' === typeof importScripts ){
+      index_path = 'search_index.json';
+  }
+  oReq.open("GET", index_path);
+  oReq.send();
+}
+
+function search (query) {
+  if (!allowSearch) {
+    console.error('Assets for search still loading');
+    return;
+  }
+
+  var resultDocuments = [];
+  var results = index.search(query);
+  for (var i=0; i < results.length; i++){
+    var result = results[i];
+    doc = documents[result.ref];
+    doc.summary = doc.text.substring(0, 200);
+    resultDocuments.push(doc);
+  }
+  return resultDocuments;
+}
+
+if( 'function' === typeof importScripts ) {
+  onmessage = function (e) {
+    if (e.data.init) {
+      init();
+    } else if (e.data.query) {
+      postMessage({ results: search(e.data.query) });
+    } else {
+      console.error("Worker - Unrecognized message: " + e);
+    }
+  };
+}
+(venv) PS D:\python_task2.2> npm run build
+
+> python_task2.2@1.0.0 build
+> npm run build:css && npm run build:js && npm run build:mkdocs && npm run minify:html && npm run validate:html
+
+
+> python_task2.2@1.0.0 build:css
+> postcss src/css/style.css -o theme/css/style.css
+
+
+> python_task2.2@1.0.0 build:js
+> uglifyjs src/js/script.js -o theme/js/script.js -c -m
+
+
+> python_task2.2@1.0.0 build:mkdocs
+> mkdocs build
+
+INFO    -  Cleaning site directory
+INFO    -  Building documentation to directory: D:\python_task2.2\site
+INFO    -  Documentation built in 0.03 seconds
+
+> python_task2.2@1.0.0 minify:html
+> html-minifier --input-dir site --output-dir site --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-style-link-type-attributes --use-short-doctype --minify-css true --minify-js true  --file-ext html
+
+
+> python_task2.2@1.0.0 validate:html
+> html-validate site/**/*.html
+
+
+D:\python_task2.2\site\index.html
+  1:1     error  DOCTYPE should be uppercase                                                   doctype-style
+  1:17    error  <html> element must have <head> as content                                    element-required-content
+  1:17    error  <html> element must have <body> as content                                    element-required-content
+  1:33    error  <meta> element is not permitted as content under <html>                       element-permitted-content
+  1:55    error  <meta> element is not permitted as content under <html>                       element-permitted-content
+  1:122   error  <meta> element is not permitted as content under <html>                       element-permitted-content
+  1:206   error  <meta> element is not permitted as content under <html>                       element-permitted-content
+  1:252   error  <title> element is not permitted as content under <html>                      element-permitted-content
+  1:252   error  <title> element requires a <head> element as parent                           element-permitted-parent
+  1:314   error  <link> element is not permitted as content under <html>                       element-permitted-content
+  1:360   error  <header> element is not permitted as content under <html>                     element-permitted-content
+  1:507   error  <main> element is not permitted as content under <html>                       element-permitted-content
+  1:538   error  element id must begin with a letter                                           valid-id
+  1:586   error  element id must begin with a letter                                           valid-id
+  1:630   error  Element <p> is implicitly closed by adjacent <h3>                             no-implicit-close
+  1:794   error  element id must begin with a letter                                           valid-id
+  1:816   error  Element <p> is implicitly closed by sibling                                   no-implicit-close
+  1:1050  error  Element <p> is implicitly closed by parent </main>                            no-implicit-close
+  1:1273  error  <footer> element is not permitted as content under <html>                     element-permitted-content
+  1:1324  error  Element <p> is implicitly closed by parent </div>                             no-implicit-close
+  1:1383  error  <script> element is not permitted as content under <html>                     element-permitted-content
+  1:1420  error  Missing close-tag, expected '</html>' but document ended before it was found  close-order
+
+✖ 22 problems (22 errors, 0 warnings)
+
+More information:
+  https://html-validate.org/rules/doctype-style.html
+  https://html-validate.org/rules/element-required-content.html
+  https://html-validate.org/rules/element-permitted-content.html
+  https://html-validate.org/rules/element-permitted-parent.html
+  https://html-validate.org/rules/valid-id.html
+  https://html-validate.org/rules/no-implicit-close.html
+  https://html-validate.org/rules/close-order.html
+
+(venv) PS D:\python_task2.2> npm run build
+
+> python_task2.2@1.0.0 build
+> npm run build:css && npm run build:js && npm run build:mkdocs && npm run minify:html && npm run validate:html
+
+
+> python_task2.2@1.0.0 build:css
+> postcss src/css/style.css -o theme/css/style.css
+
+
+> python_task2.2@1.0.0 build:js
+> uglifyjs src/js/script.js -o theme/js/script.js -c -m
+
+
+> python_task2.2@1.0.0 build:mkdocs
+> mkdocs build
+
+INFO    -  Cleaning site directory
+INFO    -  Building documentation to directory: D:\python_task2.2\site
+INFO    -  Documentation built in 0.03 seconds
+
+> python_task2.2@1.0.0 minify:html
+> html-minifier --input-dir site --output-dir site --collapse-whitespace --remove-comments --remove-redundant-attributes --remove-script-type-attributes --remove-style-link-type-attributes --use-short-doctype --minify-css true --minify-js true  --file-ext html --preserve-doctype
+
+error: unknown option `--preserve-doctype'
+(venv) PS D:\python_task2.2> npm run build
+
+> python_task2.2@1.0.0 build
+> npm run build:css && npm run build:js && npm run build:mkdocs && npm run minify:html && npm run validate:html
+
+
+> python_task2.2@1.0.0 build:css
+> postcss src/css/style.css -o theme/css/style.css
+
+
+> python_task2.2@1.0.0 build:js
+> uglifyjs src/js/script.js -o theme/js/script.js -c -m
+
+
+> python_task2.2@1.0.0 build:mkdocs
+> mkdocs build
+
+INFO    -  Cleaning site directory
+INFO    -  Building documentation to directory: D:\python_task2.2\site
+INFO    -  Documentation built in 0.03 seconds
+
+> python_task2.2@1.0.0 minify:html
+> html-minifier --input-dir site --output-dir site --collapse-whitespace --remove-comments --remove-redundant-attributes --remove-script-type-attributes --remove-style-link-type-attributes --use-short-doctype --minify-css true --minify-js true  --file-ext html --preserve-doctype
+
+error: unknown option `--preserve-doctype'
+(venv) PS D:\python_task2.2> npm run build
+
+> python_task2.2@1.0.0 build
+> npm run build:css && npm run build:js && npm run build:mkdocs && npm run minify:html && npm run validate:html
+
+
+> python_task2.2@1.0.0 build:css
+> postcss src/css/style.css -o theme/css/style.css
+
+
+> python_task2.2@1.0.0 build:js
+> uglifyjs src/js/script.js -o theme/js/script.js -c -m
+
+
+> python_task2.2@1.0.0 build:mkdocs
+> mkdocs build
+
+INFO    -  Cleaning site directory
+INFO    -  Building documentation to directory: D:\python_task2.2\site
+INFO    -  Documentation built in 0.03 seconds
+
+> python_task2.2@1.0.0 minify:html
+> html-minifier --input-dir site --output-dir site --collapse-whitespace --remove-comments --remove-redundant-attributes --remove-script-type-attributes --remove-style-link-type-attributes --minify-css true --minify-js true  --file-ext html
+
+
+> python_task2.2@1.0.0 validate:html
+> html-validate site/**/*.html
+
+
+D:\python_task2.2\site\index.html
+  1:557  error  element id must begin with a letter  valid-id
+  1:605  error  element id must begin with a letter  valid-id
+  1:817  error  element id must begin with a letter  valid-id
+
+✖ 3 problems (3 errors, 0 warnings)
+
+More information:
+  https://html-validate.org/rules/valid-id.html
+
+(venv) PS D:\python_task2.2> npm run build
+
+> python_task2.2@1.0.0 build
+> npm run build:css && npm run build:js && npm run build:mkdocs && npm run minify:html && npm run validate:html
+
+
+> python_task2.2@1.0.0 build:css
+> postcss src/css/style.css -o theme/css/style.css
+
+
+> python_task2.2@1.0.0 build:js
+> uglifyjs src/js/script.js -o theme/js/script.js -c -m
+
+
+> python_task2.2@1.0.0 build:mkdocs
+> mkdocs build
+
+INFO    -  Cleaning site directory
+INFO    -  Building documentation to directory: D:\python_task2.2\site
+INFO    -  Documentation built in 0.04 seconds
+
+> python_task2.2@1.0.0 minify:html
+> html-minifier --remove-comments --collapse-whitespace --input-dir src --output-dir dist --file-ext html
+
+
+> python_task2.2@1.0.0 validate:html
+> html-validate site/**/*.html
+
+
+D:\python_task2.2\site\index.html
+  22:17  error  element id must begin with a letter  valid-id
+  23:9   error  element id must begin with a letter  valid-id
+  25:9   error  element id must begin with a letter  valid-id
+
+✖ 3 problems (3 errors, 0 warnings)
+
+More information:
+  https://html-validate.org/rules/valid-id.html
+
+(venv) PS D:\python_task2.2> npm run build
+
+> python_task2.2@1.0.0 build
+> npm run build:css && npm run build:js && npm run build:mkdocs && npm run minify:html && npm run validate:html
+
+
+> python_task2.2@1.0.0 build:css
+> postcss src/css/style.css -o theme/css/style.css
+
+
+> python_task2.2@1.0.0 build:js
+> uglifyjs src/js/script.js -o theme/js/script.js -c -m
+
+
+> python_task2.2@1.0.0 build:mkdocs
+> mkdocs build
+
+INFO    -  Cleaning site directory
+INFO    -  Building documentation to directory: D:\python_task2.2\site
+INFO    -  Documentation built in 0.03 seconds
+
+> python_task2.2@1.0.0 minify:html
+> html-minifier --remove-comments --collapse-whitespace --input-dir src --output-dir dist --file-ext html
+
+
+> python_task2.2@1.0.0 validate:html
+> html-validate site/**/*.html
+
+
+D:\python_task2.2\site\index.html
+  22:17  error  element id must begin with a letter  valid-id
+  23:9   error  element id must begin with a letter  valid-id
+  25:9   error  element id must begin with a letter  valid-id
+
+✖ 3 problems (3 errors, 0 warnings)
+
+More information:
+  https://html-validate.org/rules/valid-id.html
+
+(venv) PS D:\python_task2.2> & D:\python_task2.2\venv\Scripts\Activate.ps1
+(venv) PS D:\python_task2.2> npm run build
+
+> python_task2.2@1.0.0 build
+> npm run build:css && npm run build:js && npm run build:mkdocs && npm run minify:html && npm run validate:html
+
+
+> python_task2.2@1.0.0 build:css
+> postcss src/css/style.css -o theme/css/style.css
+
+
+> python_task2.2@1.0.0 build:js
+> uglifyjs src/js/script.js -o theme/js/script.js -c -m
+
+
+> python_task2.2@1.0.0 build:mkdocs
+> mkdocs build
+
+Error: MkDocs encountered an error parsing the configuration file: expected a mapping node, but found scalar
+  in "D:\python_task2.2\mkdocs.yml", line 15, column 16
+(venv) PS D:\python_task2.2> npm run build
+
+> python_task2.2@1.0.0 build
+> npm run build:css && npm run build:js && npm run build:mkdocs && npm run minify:html && npm run validate:html
+
+
+> python_task2.2@1.0.0 build:css
+> postcss src/css/style.css -o theme/css/style.css
+
+
+> python_task2.2@1.0.0 build:js
+> uglifyjs src/js/script.js -o theme/js/script.js -c -m
+
+
+> python_task2.2@1.0.0 build:mkdocs
+> mkdocs build
+
+Error: MkDocs encountered an error parsing the configuration file: while constructing a Python object
+cannot find module 'plugins.slugify' (No module named 'plugins')
+  in "D:\python_task2.2\mkdocs.yml", line 15, column 16
+(venv) PS D:\python_task2.2> npm run build
+
+> python_task2.2@1.0.0 build
+> npm run build:css && npm run build:js && npm run build:mkdocs && npm run minify:html && npm run validate:html
+
+
+> python_task2.2@1.0.0 build:css
+> postcss src/css/style.css -o theme/css/style.css
+
+
+> python_task2.2@1.0.0 build:js
+> uglifyjs src/js/script.js -o theme/js/script.js -c -m
+
+
+> python_task2.2@1.0.0 build:mkdocs
+> mkdocs build
+
+INFO    -  Cleaning site directory
+INFO    -  Building documentation to directory: D:\python_task2.2\site
+INFO    -  Documentation built in 0.03 seconds
+
+> python_task2.2@1.0.0 minify:html
+> html-minifier --remove-comments --collapse-whitespace --input-dir src --output-dir dist --file-ext html
+
+
+> python_task2.2@1.0.0 validate:html
+> html-validate site/**/*.html
+
+
+D:\python_task2.2\site\index.html
+  22:17  error  element id must begin with a letter  valid-id
+  23:9   error  element id must begin with a letter  valid-id
+  25:9   error  element id must begin with a letter  valid-id
+
+✖ 3 problems (3 errors, 0 warnings)
+
+More information:
+  https://html-validate.org/rules/valid-id.html
+
+(venv) PS D:\python_task2.2> npm run build
+
+> python_task2.2@1.0.0 build
+> npm run build:css && npm run build:js && npm run build:mkdocs && npm run minify:html && npm run validate:html
+
+
+> python_task2.2@1.0.0 build:css
+> postcss src/css/style.css -o theme/css/style.css
+
+
+> python_task2.2@1.0.0 build:js
+> uglifyjs src/js/script.js -o theme/js/script.js -c -m
+
+
+> python_task2.2@1.0.0 build:mkdocs
+> mkdocs build
+
+INFO    -  Cleaning site directory
+INFO    -  Building documentation to directory: D:\python_task2.2\site
+INFO    -  Documentation built in 0.03 seconds
+
+> python_task2.2@1.0.0 minify:html
+> html-minifier --remove-comments --collapse-whitespace --input-dir src --output-dir dist --file-ext html
+
+
+> python_task2.2@1.0.0 validate:html
+> html-validate site/**/*.html
+
+
+D:\python_task2.2\site\index.html
+  22:17  error  element id must begin with a letter  valid-id
+  23:9   error  element id must begin with a letter  valid-id
+  25:9   error  element id must begin with a letter  valid-id
+
+✖ 3 problems (3 errors, 0 warnings)
+
+More information:
+  https://html-validate.org/rules/valid-id.html
+
+(venv) PS D:\python_task2.2> npm run build
+
+> python_task2.2@1.0.0 build
+> npm run build:css && npm run build:js && npm run build:mkdocs && npm run minify:html && npm run validate:html
+
+
+> python_task2.2@1.0.0 build:css
+> postcss src/css/style.css -o theme/css/style.css
+
+
+> python_task2.2@1.0.0 build:js
+> uglifyjs src/js/script.js -o theme/js/script.js -c -m
+
+
+> python_task2.2@1.0.0 build:mkdocs
+> mkdocs build
+
+INFO    -  Cleaning site directory
+INFO    -  Building documentation to directory: D:\python_task2.2\site
+INFO    -  Documentation built in 0.03 seconds
+
+> python_task2.2@1.0.0 minify:html
+> html-minifier --remove-comments --collapse-whitespace --input-dir src --output-dir dist --file-ext html
+
+
+> python_task2.2@1.0.0 validate:html
+> html-validate site/**/*.html
+
+
+D:\python_task2.2\site\index.html
+  22:17  error  element id must begin with a letter  valid-id
+  23:9   error  element id must begin with a letter  valid-id
+  25:9   error  element id must begin with a letter  valid-id
+
+✖ 3 problems (3 errors, 0 warnings)
+
+More information:
+  https://html-validate.org/rules/valid-id.html
+
+(venv) PS D:\python_task2.2> npm run build
+
+> python_task2.2@1.0.0 build
+> npm run build:css && npm run build:js && npm run build:mkdocs && npm run minify:html && npm run validate:html
+
+
+> python_task2.2@1.0.0 build:css
+> postcss src/css/style.css -o theme/css/style.css
+
+
+> python_task2.2@1.0.0 build:js
+> uglifyjs src/js/script.js -o theme/js/script.js -c -m
+
+
+> python_task2.2@1.0.0 build:mkdocs
+> mkdocs build
+
+INFO    -  Cleaning site directory
+INFO    -  Building documentation to directory: D:\python_task2.2\site
+INFO    -  Documentation built in 0.03 seconds
+
+> python_task2.2@1.0.0 minify:html
+> html-minifier --remove-comments --collapse-whitespace --input-dir src --output-dir dist --file-ext html
+
+
+> python_task2.2@1.0.0 validate:html
+> html-validate --config .htmlvalidate.json site/**/*.html
+
+(venv) PS D:\python_task2.2> 
